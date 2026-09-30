@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Public+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"outline":"#6d7a77","secondary":"#455f87","surface":"#f9f9ff","on-tertiary-fixed-variant":"#5a4300","tertiary-fixed-dim":"#eec14b","tertiary-container":"#927000","on-primary":"#ffffff","inverse-surface":"#263143","on-background":"#111c2d","on-error":"#ffffff","secondary-fixed-dim":"#adc8f5","on-surface":"#111c2d","surface-container-lowest":"#ffffff","primary":"#00685d","surface-tint":"#006a60","surface-dim":"#cfdaf2","surface-bright":"#f9f9ff","on-surface-variant":"#3d4947","secondary-fixed":"#d5e3ff","on-primary-fixed-variant":"#005048","on-tertiary-container":"#fffbff","tertiary":"#745800","primary-fixed-dim":"#6fd8c8","background":"#f9f9ff","outline-variant":"#bcc9c6","on-secondary":"#ffffff","surface-container":"#e7eeff","surface-variant":"#d8e3fb","primary-fixed":"#8cf5e4","primary-container":"#008376","error":"#ba1a1a","tertiary-fixed":"#ffdf98","secondary-container":"#b5d0fd","on-tertiary":"#ffffff","on-secondary-fixed":"#001c3b","on-primary-fixed":"#00201c","inverse-on-surface":"#ecf1ff","surface-container-low":"#f0f3ff","error-container":"#ffdad6","surface-container-highest":"#d8e3fb","inverse-primary":"#6fd8c8","on-primary-container":"#f4fffb","on-error-container":"#93000a","on-secondary-container":"#3e5980","surface-container-high":"#dee8ff","on-tertiary-fixed":"#251a00","on-secondary-fixed-variant":"#2d486d"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-lg":"1.5rem","margin":"2rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","gutter":"1.5rem","space-2xl":"3rem","gutter-mobile":"1rem","margin-desktop":"2rem","margin-mobile":"1rem"},"fontFamily":{"label-sm":["Public Sans"],"title-sm":["Public Sans"],"label-md":["Public Sans"],"body-lg":["Public Sans"],"body-md":["Public Sans"],"display-lg":["Atkinson Hyperlegible Next"],"body-sm":["Public Sans"],"headline-xl":["Atkinson Hyperlegible Next"],"headline-lg":["Atkinson Hyperlegible Next"],"headline-md":["Atkinson Hyperlegible Next"]},"fontSize":{"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.03em","fontWeight":"500"}],"title-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.8125rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-xl":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["1.375rem",{"lineHeight":"1.875rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-surface-container-high px-margin-desktop py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>🇮🇳</span><span class="font-label-md text-label-md text-on-surface">Government of India</span><span class="text-outline-variant">|</span><span>Ministry of Home Affairs (MHA)</span><span class="text-outline-variant">|</span><span>Internal Personnel Welfare Directorate</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-body-sm">verified_user</span><span>Official Command Portal</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-space-xs"><button class="text-primary font-label-md text-label-md hover:underline" type="button">English</button><span class="text-outline-variant">/</span><button class="hover:text-on-surface transition-colors" type="button">हिन्दी</button></div></div></div><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md flex-shrink-0"><img alt="SAHAYAK Shield with Heart Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W9FwhgrYb2Qs9Cl5yejjTvBSO8amrylOzQFBbpFh2zWs4uo_BLs5A__9K3al_8RoVz24RjFfm6UUovg-aF_P9r4BIsswscZist7SqB22T6z2OvS6jmixE35Ci7pzlkDpmx9BoxhQ85O9E3lFyRRKoXJysGUmKlUReyQSKzq68waktq_9WcK1n5O7kDkIL5q7Kwnbzm1Z-Dgh5wWNJfMPC_gnWMSuyAUwLxjax-nVJ_u5-waBm_ztNOVNs"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight text-on-surface uppercase">SAHAYAK</span><span class="inline-flex items-center gap-space-xs bg-surface-container-low text-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm"><span class="material-symbols-outlined text-label-md">lock</span>Strict Anonymity Active — AES-256</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Personnel Wellbeing &amp; Readiness Portal</span></div></div><div class="flex-1 max-w-xl mx-auto"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none">search</span><input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-lowest text-on-surface placeholder:text-outline rounded-full shadow-[0_1px_4px_rgba(0,0,0,0.03)] focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all" placeholder="Search by Anonymised ID (e.g. #A-2041) or Unit..." type="search"/></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full text-secondary"><span class="material-symbols-outlined text-title-sm">support_agent</span><div class="flex flex-col leading-none"><span class="font-label-sm text-label-sm text-on-surface-variant">24/7 Welfare Line</span><span class="font-label-md text-label-md text-on-surface font-bold">1800-11-SAHAYAK</span></div></div><div class="relative"><button class="p-space-sm rounded-full hover:bg-surface-container text-on-surface-variant transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-surface"></span></button></div><button class="p-space-sm rounded-full hover:bg-surface-container text-on-surface-variant transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">routine</span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1RZskdGWqjbrWtxtZXO8J0HhIdyxBtV2TDu-pb4kmmxCR5KO1F4VIK9fjO787HvJh8MBiO2KY_pwAjKEpr9_9Kl7bN-_g04XjfAB4ruPwIEfZ_1kG5klOm_KnNhX-AZEOfOLC6mS1nMcBXfScHy5xTtRTKjXjR2LUFHdmRkV4bdlEAzTUDKp-uJN2I4hc6o476G-Z080liSYPfHTffmC2HgUfoP0ZU07GXaXg_3u_wASDxnQmiT_"/><div class="flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface leading-tight">Dr. R. Sharma</span><span class="bg-secondary-container text-on-secondary-container px-space-xs rounded-full font-label-sm text-label-sm">Authorized</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">CRPF/BSF Central Zone</span></div></div></div></div></header><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-30 flex flex-col pt-28 pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="px-space-lg mb-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Modules</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-headline-md">dashboard</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="support-queue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-headline-md">volunteer_activism</span><span class="font-body-md text-body-md">Support Queue</span></div><span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">3 Priority</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="personnel-welfare-detail-page" href="#"><span class="material-symbols-outlined text-headline-md">shield_person</span><span class="font-body-md text-body-md">Detail View</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="workload-balancing" href="#"><span class="material-symbols-outlined text-headline-md">balance</span><span class="font-body-md text-body-md">Workload Balancing</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-and-audit" href="#"><span class="material-symbols-outlined text-headline-md">lock_clock</span><span class="font-body-md text-body-md">Privacy &amp; Audit</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-headline-md">analytics</span><span class="font-body-md text-body-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="system-settings" href="#"><span class="material-symbols-outlined text-headline-md">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav><div class="px-space-md mt-auto space-y-space-sm"><div class="p-space-md bg-surface-container-lowest rounded shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-xs text-primary mb-space-xs"><span class="material-symbols-outlined text-body-md">favorite</span><span class="font-label-md text-label-md font-semibold">Care &amp; Ethics Pledge</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Support, Not Surveillance. Objective wellbeing metrics to prevent burnout and protect our force members.</p></div><div class="flex items-center justify-between px-space-sm font-label-sm text-label-sm text-outline"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span>Session secure</span></div><span>Auto-locks in 18m</span></div></div></aside><div class="pl-64"><main class="relative pt-20 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin-desktop py-space-lg space-y-space-xl">
+<!-- Welcome Banner & Ethical Context -->
+<div class="bg-surface-container-lowest p-space-xl rounded shadow-sm relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-primary-fixed/30 to-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Western Command Active Telemetry</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant font-normal">Updated 14 mins ago</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">
+            Welcome back, Officer Sharma.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Here is this week's welfare overview across Western Command Units. Data reflects anonymized operational metrics to support compassionate duty scheduling and proactive decompression.
+          </p>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-low p-space-xs rounded shadow-inner">
+<div class="inline-flex rounded p-0.5 bg-surface-container-lowest text-on-surface">
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all">Last 7 Days</button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all">Last 30 Days</button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all">Quarter to Date</button>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest text-on-surface pl-space-md pr-8 py-space-xs rounded font-label-md text-label-md shadow-sm focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option>All Units (12 Active)</option>
+<option>Battalion 4 - High Altitude</option>
+<option>Battalion 9 - Quick Reaction</option>
+<option>District Unit 12</option>
+<option>Border Outpost Charlie</option>
+</select>
+<span class="material-symbols-outlined text-body-sm absolute right-2 top-2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Ethical Guidance Pill -->
+<div class="mt-space-lg p-space-md rounded bg-surface-container-low flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary mt-0.5 text-title-sm flex-shrink-0">lightbulb</span>
+<div class="flex-1">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider block">Ethical Directive 2024/MHA-W</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+            Predictive indicators highlight opportunities for supportive care, leave replenishment, and voluntary counselling—never disciplinary evaluation, deployment disqualification, or performance grading.
+          </p>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline whitespace-nowrap self-center" href="#">Read Framework →</a>
+</div>
+</div>
+<!-- Top 4 Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-outline mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Personnel Cohort</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-title-sm">verified_user</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">4,820</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center">
+<span class="material-symbols-outlined text-label-md">arrow_upward</span>+34
+            </span>
+</div>
+<p class="font-title-sm text-title-sm text-on-surface font-medium">Monitored (Anonymised)</p>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-label-md text-primary">fingerprint</span>
+<span>100% de-identified IDs | Zero name indexing</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">+34 fresh rotation personnel inducted this cycle</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-outline mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Care Conversations</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-title-sm">chat_bubble_outline</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">28</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Pending</span>
+</div>
+<p class="font-title-sm text-title-sm text-on-surface font-medium">Check-ins Due</p>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-label-md text-secondary">self_improvement</span>
+<span>14 completed this week</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Proactive dialogues with battalion mentors</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-outline mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Assistance</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-title-sm">volunteer_activism</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Formations</span>
+</div>
+<p class="font-title-sm text-title-sm text-on-surface font-medium">Benefiting from Support</p>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-label-md text-tertiary">bedtime</span>
+<span>Focus: Rest-rotation recovery</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1 truncate">Bn 4, District Unit 12, Post Charlie</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-outline mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Accompaniment</span>
+<div class="w-8 h-8 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-title-sm">task_alt</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">142</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center">
+<span class="material-symbols-outlined text-label-md">arrow_upward</span>+18%
+            </span>
+</div>
+<p class="font-title-sm text-title-sm text-on-surface font-medium">Completed This Month</p>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-label-md text-primary">family_restroom</span>
+<span>Leave: 84 | Rotation: 36 | Debrief: 22</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Direct officer relief actions sanctioned</p>
+</div>
+</div>
+</div>
+<!-- Main Data Visualizations Grid (2 Columns) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Unit-Level Wellbeing Trend -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-xl rounded shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Aggregate Resilience Metrics</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container px-space-sm py-0.5 rounded-full text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Cohort Anonymised View
+            </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+            Unit-Level Wellbeing Trend (Last 6 Months)
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Cross-referencing nocturnal recovery, load distribution, and statutory leave utilization across 12 battalions.
+          </p>
+</div>
+<!-- SVG Line Chart with Reference Band -->
+<div class="relative w-full h-72 my-space-sm">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 600 240">
+<!-- Grid Lines -->
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="580" y1="30" y2="30"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="580" y1="80" y2="80"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="580" y1="130" y2="130"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" x1="40" x2="580" y1="180" y2="180"></line>
+<!-- Healthy Benchmark Zone (75% - 90%) -> Y between 40 and 85 -->
+<rect class="text-primary-fixed/20" fill="currentColor" height="50" rx="4" width="540" x="40" y="45"></rect>
+<text class="fill-primary font-label-sm text-label-sm opacity-90" font-size="10" x="45" y="60">Target Operational Equilibrium (75% – 90%)</text>
+<!-- Line 1: Average Sleep & Rest Index (Teal) -->
+<path class="text-primary" d="M 60 110 C 130 95, 180 120, 240 85 C 300 70, 360 80, 420 65 C 480 55, 530 60, 560 52" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<circle class="text-primary" cx="560" cy="52" fill="currentColor" r="4.5"></circle>
+<circle class="text-primary/30" cx="560" cy="52" fill="currentColor" r="8"></circle>
+<!-- Line 2: Duty Load Balance (Secondary Slate/Navy) -->
+<path class="text-secondary" d="M 60 140 C 130 135, 180 150, 240 125 C 300 110, 360 100, 420 95 C 480 90, 530 85, 560 82" fill="none" stroke="currentColor" stroke-dasharray="6 3" stroke-linecap="round" stroke-width="2.5"></path>
+<circle class="text-secondary" cx="560" cy="82" fill="currentColor" r="4"></circle>
+<!-- Line 3: Leave Utilization Rate (Warm Amber) -->
+<path class="text-tertiary-fixed-dim" d="M 60 170 C 130 160, 180 155, 240 145 C 300 150, 360 130, 420 120 C 480 105, 530 98, 560 90" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle class="text-tertiary-fixed-dim" cx="560" cy="90" fill="currentColor" r="4"></circle>
+<!-- Y Axis Labels -->
+<text class="fill-outline font-label-sm" font-size="9" x="12" y="34">100%</text>
+<text class="fill-outline font-label-sm" font-size="9" x="12" y="84">75%</text>
+<text class="fill-outline font-label-sm" font-size="9" x="12" y="134">50%</text>
+<text class="fill-outline font-label-sm" font-size="9" x="12" y="184">25%</text>
+<!-- X Axis Labels -->
+<text class="fill-outline font-label-sm" font-size="11" x="50" y="215">Nov</text>
+<text class="fill-outline font-label-sm" font-size="11" x="150" y="215">Dec</text>
+<text class="fill-outline font-label-sm" font-size="11" x="250" y="215">Jan</text>
+<text class="fill-outline font-label-sm" font-size="11" x="350" y="215">Feb</text>
+<text class="fill-outline font-label-sm" font-size="11" x="450" y="215">Mar</text>
+<text class="fill-outline font-label-sm font-semibold text-on-surface" font-size="11" x="545" y="215">Apr (Curr)</text>
+</svg>
+</div>
+<!-- Legend -->
+<div class="flex flex-wrap items-center justify-between pt-space-md mt-space-sm bg-surface-container-low/40 p-space-md rounded text-on-surface-variant font-label-sm text-label-sm gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Avg Sleep &amp; Rest Index (84%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-1 bg-secondary rounded"></span>
+<span>Duty Load Balance (78%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Leave Utilization (71%)</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline">
+<span class="w-3 h-3 bg-primary-fixed/40 rounded"></span>
+<span>Equilibrium Band</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Workload & Deployment Strain Heatmap -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-xl rounded shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Institutional Diagnostics</span>
+<span class="font-label-sm text-label-sm text-outline">6 Priority Formations</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+            Workload &amp; Deployment Strain Heatmap
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Matrix assessment across persistent physical demands. Calm indicators highlight formations ready for shift rebalancing.
+          </p>
+<!-- Heatmap Matrix Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm">
+<th class="pb-space-sm font-medium">Battalion / Unit</th>
+<th class="pb-space-sm font-medium text-center" title="Continuous Deployment &gt; 60d">Deploy</th>
+<th class="pb-space-sm font-medium text-center" title="Leave Deficit &gt; 45% pending">Leave</th>
+<th class="pb-space-sm font-medium text-center" title="Night/Double shift index">Shifts</th>
+<th class="pb-space-sm font-medium text-center" title="High altitude or desert">Terrain</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-2">
+<!-- Unit 1: Battalion 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 pr-2 font-medium text-on-surface">Battalion 4 (Bravo)</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold" title="78 Continuous days">Elevated</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed" title="48% unavailed leave">Moderate</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold" title="Optimal">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold" title="High Altitude Frontier">Elevated</span>
+</td>
+</tr>
+<!-- Unit 2: Battalion 9 (QRT) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 pr-2 font-medium text-on-surface">Battalion 9 (QRT)</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Moderate</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">Elevated</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+</tr>
+<!-- Unit 3: District Unit 12 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 pr-2 font-medium text-on-surface">District Unit 12</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Moderate</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">Elevated</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Moderate</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+</tr>
+<!-- Unit 4: Special Task Force -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 pr-2 font-medium text-on-surface">Special Task Force</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Moderate</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+</tr>
+<!-- Unit 5: Border Outpost Charlie -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 pr-2 font-medium text-on-surface">Border Post Charlie</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">Elevated</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">Elevated</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed">Moderate</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">Elevated</span>
+</td>
+</tr>
+<!-- Unit 6: Training Wing 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 pr-2 font-medium text-on-surface">Training Wing 3</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+<td class="py-2.5 px-1 text-center">
+<span class="inline-block px-2 py-1 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Optimal</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Scale Legend & Suggested Action -->
+<div class="mt-space-md pt-space-md bg-surface-container-low p-space-md rounded flex items-center justify-between">
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-primary-fixed"></span> Optimal</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-tertiary-fixed"></span> Moderate</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-error-container"></span> Elevated</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-semibold hover:underline flex items-center gap-1">
+            Initiate Rotation Suggestion →
+          </button>
+</div>
+</div>
+</div>
+<!-- Priority Support Queue Table Section -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden">
+<!-- Table Header & Filter Tabs -->
+<div class="p-space-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-low/30">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-md">spa</span>
+<span>Continuous Human Accompaniment</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+            Priority Support Queue — Opportunities for Timely Care
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing anonymised personnel indicators where scheduled rest or supportive dialogue is recommended.
+          </p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-full text-on-surface-variant font-label-md text-label-md">
+<button class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-semibold">All (18)</button>
+<button class="px-space-md py-1 rounded-full hover:text-on-surface transition-colors">Needs Support (6)</button>
+<button class="px-space-md py-1 rounded-full hover:text-on-surface transition-colors">Watch (8)</button>
+<button class="px-space-md py-1 rounded-full hover:text-on-surface transition-colors">Scheduled for Review (4)</button>
+</div>
+</div>
+<!-- Main Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md tracking-wider uppercase">
+<th class="py-space-md px-space-lg">Anonymised ID</th>
+<th class="py-space-md px-space-md">Unit / Formation</th>
+<th class="py-space-md px-space-md">Wellbeing Indicator</th>
+<th class="py-space-md px-space-md">Top Contributing Factors</th>
+<th class="py-space-md px-space-md">Last Reviewed</th>
+<th class="py-space-md px-space-lg text-right">Care Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg font-mono font-semibold flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-body-sm text-outline">lock</span>
+<span>#A-2041</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium">Battalion 4</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bravo Company (High Altitude)</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-md text-label-md bg-error-container text-on-error-container">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  May Benefit from Support
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">72 days continuous duty</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Harsh terrain</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>2 days ago</div>
+<div class="text-outline text-label-sm">Welfare Off. Verma</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:opacity-95 transition-all">
+<span>View Suggestions</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg font-mono font-semibold flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-body-sm text-outline">lock</span>
+<span>#B-1088</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium">District Unit 12</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Traffic &amp; Escort Wing</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Watch / Active Monitoring
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">High night shift ratio</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Leave accrued &gt;40d</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>Yesterday</div>
+<div class="text-outline text-label-sm">Proactive Algorithmic Flag</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:opacity-95 transition-all">
+<span>View Suggestions</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg font-mono font-semibold flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-body-sm text-outline">lock</span>
+<span>#C-3904</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium">Border Outpost Charlie</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Forward Patrol Post</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-md text-label-md bg-error-container text-on-error-container">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  May Benefit from Support
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Declining leave taken (0 in 90d)</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Recent remote deployment</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>3 days ago</div>
+<div class="text-outline text-label-sm">Col. Deshmukh</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:opacity-95 transition-all">
+<span>View Suggestions</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg font-mono font-semibold flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-body-sm text-outline">lock</span>
+<span>#D-5512</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium">Battalion 9</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Quick Reaction Team</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Watch / Active Monitoring
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">High tempo callouts (&gt;14/wk)</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Irregular rest intervals</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>5 days ago</div>
+<div class="text-outline text-label-sm">Duty Officer Rao</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:opacity-95 transition-all">
+<span>View Suggestions</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg font-mono font-semibold flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-body-sm text-outline">lock</span>
+<span>#E-7729</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-medium">District Unit 12</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Central Reserve Pool</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-md text-label-md bg-primary-fixed text-on-primary-fixed">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Stable / Well-Supported
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Completed rest leave (14d)</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Shift normalised</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>Today, 09:30</div>
+<div class="text-outline text-label-sm">Post-leave Check-in</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded font-label-md text-label-md bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all">
+<span>Review Notes</span>
+<span class="material-symbols-outlined text-body-sm">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer with Ethical Safeguard & Pagination -->
+<div class="p-space-lg bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-title-sm">verified</span>
+<span>All recommendations generated via explainable heuristics vetted by the Defence Institute of Psychological Research (DIPR).</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Showing 1–5 of 18 priority opportunities</span>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-outline transition-colors disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-headline-sm">chevron_left</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-primary font-semibold shadow-sm">1</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface transition-colors">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container text-on-surface transition-colors">3</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface transition-colors">
+<span class="material-symbols-outlined text-headline-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Personnel Welfare Photo & Guidance Callout Card -->
+<div class="bg-surface-container-lowest p-space-xl rounded shadow-sm flex flex-col md:flex-row items-center gap-space-xl">
+<img class="w-full md:w-56 h-36 object-cover rounded shadow-inner flex-shrink-0" data-alt="Uniformed Central Armed Police Force officers engaging in a relaxed, supportive group welfare session with a battalion counsellor in a serene indoor setting with soft daylight and warm teal accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRW4BvDigqMamAySmQmz-scKGJg8OyeXlXjbV2U3B35wVBb2XDH3JR6ZfxBt_FdHIqRLL_lBAhEpuPMgm3SNcrPgYDJ72DDfh-HgRoFoaYmYVIhsxEEv2H_Ex0CNLaX9hmR9vFOE5C7svTYlOat3A4vH8Z_aHchUDGvVX2Rc6FablwywI38wpy3DMBx6IY2sB_uswDKJMtpM2rFyidkVIJf8AJl3K6fnxDv3QNNhONNoMMNIo5gvT-"/>
+<div class="flex-1 space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-md">spa</span>
+<span>Wellness &amp; Decompression Guideline 4.2</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+          Mandatory Post-Deployment Rest Intervals Now Live
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Officers completing &gt;60 continuous operational days are automatically queued for a 7-day administrative decompression block without loss of statutory leave credits. Welfare commanders can validate this directly via the Workload Balancing tab.
+        </p>
+</div>
+<div class="flex-shrink-0 w-full md:w-auto">
+<button class="w-full md:w-auto px-space-lg py-space-sm rounded font-label-md text-label-md bg-secondary text-on-secondary shadow-sm hover:opacity-95 transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-body-sm">assignment_turned_in</span>
+<span>Review Leave Policy Directives</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

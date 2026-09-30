@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..700;1,400..700&amp;family=Public+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"outline":"#6d7a77","secondary":"#455f87","surface":"#f9f9ff","on-tertiary-fixed-variant":"#5a4300","tertiary-fixed-dim":"#eec14b","tertiary-container":"#927000","on-primary":"#ffffff","inverse-surface":"#263143","on-background":"#111c2d","on-error":"#ffffff","secondary-fixed-dim":"#adc8f5","on-surface":"#111c2d","surface-container-lowest":"#ffffff","primary":"#00685d","surface-tint":"#006a60","surface-dim":"#cfdaf2","surface-bright":"#f9f9ff","on-surface-variant":"#3d4947","secondary-fixed":"#d5e3ff","on-primary-fixed-variant":"#005048","on-tertiary-container":"#fffbff","tertiary":"#745800","primary-fixed-dim":"#6fd8c8","background":"#f9f9ff","outline-variant":"#bcc9c6","on-secondary":"#ffffff","surface-container":"#e7eeff","surface-variant":"#d8e3fb","primary-fixed":"#8cf5e4","primary-container":"#008376","error":"#ba1a1a","tertiary-fixed":"#ffdf98","secondary-container":"#b5d0fd","on-tertiary":"#ffffff","on-secondary-fixed":"#001c3b","on-primary-fixed":"#00201c","inverse-on-surface":"#ecf1ff","surface-container-low":"#f0f3ff","error-container":"#ffdad6","surface-container-highest":"#d8e3fb","inverse-primary":"#6fd8c8","on-primary-container":"#f4fffb","on-error-container":"#93000a","on-secondary-container":"#3e5980","surface-container-high":"#dee8ff","on-tertiary-fixed":"#251a00","on-secondary-fixed-variant":"#2d486d"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-lg":"1.5rem","margin":"2rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","gutter":"1.5rem","space-2xl":"3rem","gutter-mobile":"1rem","margin-desktop":"2rem","margin-mobile":"1rem"},"fontFamily":{"label-sm":["Public Sans"],"title-sm":["Public Sans"],"label-md":["Public Sans"],"body-lg":["Public Sans"],"body-md":["Public Sans"],"display-lg":["Atkinson Hyperlegible Next"],"body-sm":["Public Sans"],"headline-xl":["Atkinson Hyperlegible Next"],"headline-lg":["Atkinson Hyperlegible Next"],"headline-md":["Atkinson Hyperlegible Next"]},"fontSize":{"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.03em","fontWeight":"500"}],"title-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["0.8125rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-xl":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["1.375rem",{"lineHeight":"1.875rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-surface-container-high px-margin-desktop py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>🇮🇳</span><span class="font-label-md text-label-md text-on-surface">Government of India</span><span class="text-outline-variant">|</span><span>Ministry of Home Affairs (MHA)</span><span class="text-outline-variant">|</span><span>Internal Personnel Welfare Directorate</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-body-sm">verified_user</span><span>Official Command Portal</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-space-xs"><button class="text-primary font-label-md text-label-md hover:underline" type="button">English</button><span class="text-outline-variant">/</span><button class="hover:text-on-surface transition-colors" type="button">हिन्दी</button></div></div></div><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md flex-shrink-0"><img alt="SAHAYAK Shield with Heart Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W9FwhgrYb2Qs9Cl5yejjTvBSO8amrylOzQFBbpFh2zWs4uo_BLs5A__9K3al_8RoVz24RjFfm6UUovg-aF_P9r4BIsswscZist7SqB22T6z2OvS6jmixE35Ci7pzlkDpmx9BoxhQ85O9E3lFyRRKoXJysGUmKlUReyQSKzq68waktq_9WcK1n5O7kDkIL5q7Kwnbzm1Z-Dgh5wWNJfMPC_gnWMSuyAUwLxjax-nVJ_u5-waBm_ztNOVNs"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight text-on-surface uppercase">SAHAYAK</span><span class="inline-flex items-center gap-space-xs bg-surface-container-low text-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm"><span class="material-symbols-outlined text-label-md">lock</span>Strict Anonymity Active — AES-256</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Personnel Wellbeing &amp; Readiness Portal</span></div></div><div class="flex-1 max-w-xl mx-auto"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none">search</span><input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-lowest text-on-surface placeholder:text-outline rounded-full shadow-[0_1px_4px_rgba(0,0,0,0.03)] focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all" placeholder="Search by Anonymised ID (e.g. #A-2041) or Unit..." type="search"/></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full text-secondary"><span class="material-symbols-outlined text-title-sm">support_agent</span><div class="flex flex-col leading-none"><span class="font-label-sm text-label-sm text-on-surface-variant">24/7 Welfare Line</span><span class="font-label-md text-label-md text-on-surface font-bold">1800-11-SAHAYAK</span></div></div><div class="relative"><button class="p-space-sm rounded-full hover:bg-surface-container text-on-surface-variant transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-surface"></span></button></div><button class="p-space-sm rounded-full hover:bg-surface-container text-on-surface-variant transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">routine</span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1RZskdGWqjbrWtxtZXO8J0HhIdyxBtV2TDu-pb4kmmxCR5KO1F4VIK9fjO787HvJh8MBiO2KY_pwAjKEpr9_9Kl7bN-_g04XjfAB4ruPwIEfZ_1kG5klOm_KnNhX-AZEOfOLC6mS1nMcBXfScHy5xTtRTKjXjR2LUFHdmRkV4bdlEAzTUDKp-uJN2I4hc6o476G-Z080liSYPfHTffmC2HgUfoP0ZU07GXaXg_3u_wASDxnQmiT_"/><div class="flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface leading-tight">Dr. R. Sharma</span><span class="bg-secondary-container text-on-secondary-container px-space-xs rounded-full font-label-sm text-label-sm">Authorized</span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">CRPF/BSF Central Zone</span></div></div></div></div></header><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-30 flex flex-col pt-28 pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="px-space-lg mb-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Institutional Modules</span></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-headline-md">dashboard</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="support-queue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-headline-md">volunteer_activism</span><span class="font-body-md text-body-md">Support Queue</span></div><span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">3 Priority</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="personnel-welfare-detail-page" href="#"><span class="material-symbols-outlined text-headline-md">shield_person</span><span class="font-body-md text-body-md">Detail View</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="workload-balancing" href="#"><span class="material-symbols-outlined text-headline-md">balance</span><span class="font-body-md text-body-md">Workload Balancing</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="privacy-and-audit" href="#"><span class="material-symbols-outlined text-headline-md">lock_clock</span><span class="font-body-md text-body-md">Privacy &amp; Audit</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-headline-md">analytics</span><span class="font-body-md text-body-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="system-settings" href="#"><span class="material-symbols-outlined text-headline-md">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav><div class="px-space-md mt-auto space-y-space-sm"><div class="p-space-md bg-surface-container-lowest rounded shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-xs text-primary mb-space-xs"><span class="material-symbols-outlined text-body-md">favorite</span><span class="font-label-md text-label-md font-semibold">Care &amp; Ethics Pledge</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Support, Not Surveillance. Objective wellbeing metrics to prevent burnout and protect our force members.</p></div><div class="flex items-center justify-between px-space-sm font-label-sm text-label-sm text-outline"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span>Session secure</span></div><span>Auto-locks in 18m</span></div></div></aside><div class="pl-64"><main class="relative pt-20 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Feedback Banner (Hidden by default, triggered by JS) -->
+<div class="fixed bottom-6 right-8 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-md bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-lg shadow-xl" id="rebalance-toast">
+<span class="material-symbols-outlined text-primary-fixed text-headline-md">verified</span>
+<div>
+<p class="font-title-sm text-title-sm">Redistribution Plan Submitted</p>
+<p class="font-body-sm text-body-sm text-outline-variant">Awaiting DIG/Commandant digital endorsement • Audit log #MHA-WB-8821</p>
+</div>
+</div>
+<div class="w-full px-margin-desktop py-space-xl space-y-space-2xl">
+<!-- Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm tracking-wide">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            ACTIVE ROSTER REBALANCING ENGINE
+          </span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Central Zone Command Grid</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">
+          Workload &amp; Duty Roster Equity Balancing
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Simulate and apply fatigue-reducing personnel distribution across active battalions and district posts. Prioritize institutional accompaniment over punitive compliance.
+        </p>
+</div>
+<div class="flex items-center gap-space-md flex-shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-surface-container-high transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-title-sm">ios_share</span>
+          Export Roster Assessment
+        </button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-md group" onclick="scrollToSimulation()" type="button">
+<span class="material-symbols-outlined text-title-sm group-hover:rotate-12 transition-transform">tune</span>
+          Simulate Rebalancing
+        </button>
+</div>
+</div>
+<!-- Summary Metrics Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Fatigue Exposure</span>
+<p class="font-title-sm text-title-sm text-on-surface">Average Weekly Duty</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">58.4</span>
+<span class="font-body-md text-body-md text-outline">hrs / week</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-label-md">arrow_upward</span>
+            +10.4h above target
+          </span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">Target: 48.0 hrs</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Excessive Allocation</span>
+<p class="font-title-sm text-title-sm text-on-surface">Overtime (&gt;60h/wk)</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">hourglass_top</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">14.8%</span>
+<span class="font-body-md text-body-md text-outline">of active force</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-label-md">trending_down</span>
+            Down 3.2% this month
+          </span>
+<span class="text-outline">184 personnel</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 29%;"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Restoration Pipeline</span>
+<p class="font-title-sm text-title-sm text-on-surface">Leave Clearance Rate</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">event_available</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">68%</span>
+<span class="font-body-md text-body-md text-outline">backlog solved</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-label-md">done_all</span>
+            +12% vs prior cycle
+          </span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">Annual Cap: 85%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Circadian Recovery</span>
+<p class="font-title-sm text-title-sm text-on-surface">Rest Gap Index</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined">bedtime</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm my-space-xs">
+<span class="font-display-lg text-display-lg text-error font-bold">8.2</span>
+<span class="font-body-md text-body-md text-outline">hrs between shifts</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-label-md">warning</span>
+            Deficit: 1.8 hrs
+          </span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">Target: ≥10 hrs</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 58%;"></div>
+</div>
+</div>
+</div>
+<!-- Contextual Care Callout -->
+<div class="bg-gradient-to-r from-surface-container to-surface-container-low p-space-lg rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-headline-lg">health_and_safety</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Fatigue-Mitigation Advisory active</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            High operational density detected across 2 battalions. Applying automatic rotation buffers will lower chronic exhaustion incidents by an estimated 34%.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<span class="font-label-md text-label-md px-space-md py-1.5 rounded-full bg-surface-container-lowest text-primary font-semibold shadow-xs">
+          Policy Directive: MHA-WF-2024
+        </span>
+</div>
+</div>
+<!-- Unit Strain Overview Table / Roster Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Active Unit Strain Overview</h2>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full">5 Formations Evaluated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Real-time duty saturation matrix. Highlighted units require immediate schedule re-alignment.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-title-sm pointer-events-none">filter_list</span>
+<select class="pl-8 pr-6 py-1.5 bg-surface-container-low text-on-surface font-label-md text-label-md rounded border-0 focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option>All Strain Categories</option>
+<option>High Strain (&gt;115%)</option>
+<option>Optimal Load (70-90%)</option>
+<option>Surplus Capacity</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-space-md px-space-md rounded-l">Unit / Deployment Post</th>
+<th class="py-space-md px-space-md">Strength</th>
+<th class="py-space-md px-space-md">Current Load</th>
+<th class="py-space-md px-space-md">Critical Factor</th>
+<th class="py-space-md px-space-md">Fatigue Index</th>
+<th class="py-space-md px-space-md rounded-r">Recommended Care Intervention</th>
+</tr>
+</thead>
+<tbody class="text-on-surface divide-y-0">
+<!-- Row 1: High Strain -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-space-md px-space-md font-semibold">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+<div>
+<span class="block text-on-surface font-title-sm text-title-sm">Battalion 4 - Bravo Coy</span>
+<span class="font-label-sm text-label-sm text-outline">High-Altitude Border Zone • CRPF</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-medium">140 Personnel</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-label-md text-label-md text-error font-bold">128%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-body-md text-error">history_toggle_off</span>
+                  72d Continuous
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Elevated Fatigue
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-secondary font-medium">Deploy Reserve Platoon 2 &amp; Rotate 35 personnel</span>
+<button class="px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary transition-colors font-label-sm text-label-sm whitespace-nowrap" onclick="applySingleRotation('Battalion 4')" type="button">
+                    Stage Relief
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: High Strain -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-space-md px-space-md font-semibold">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+<div>
+<span class="block text-on-surface font-title-sm text-title-sm">District Unit 12 - Traffic Escort</span>
+<span class="font-label-sm text-label-sm text-outline">Urban Dense Corridor • Zone B</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-medium">95 Personnel</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 95%;"></div>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold">119%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-body-md text-tertiary">nights_stay</span>
+                  42% Night Shifts
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Rest Recommended
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-secondary font-medium">Incorporate Municipal Reserve Support</span>
+<button class="px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary transition-colors font-label-sm text-label-sm whitespace-nowrap" onclick="applySingleRotation('District Unit 12')" type="button">
+                    Stage Relief
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Moderate Strain -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-space-md px-space-md font-semibold">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary"></div>
+<div>
+<span class="block text-on-surface font-title-sm text-title-sm">Border Outpost Charlie</span>
+<span class="font-label-sm text-label-sm text-outline">Forward Surveillance Post • BSF</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-medium">60 Personnel</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 86%;"></div>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold">114%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-body-md text-outline">satellite_alt</span>
+                  High Remote Isolation
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active Monitoring
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-outline-variant font-medium text-on-surface">Schedule 14-day rotational relief</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm whitespace-nowrap" type="button">
+                    Queue Schedule
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Balanced / Optimal with Surplus -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-space-md px-space-md font-semibold">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<div>
+<span class="block text-on-surface font-title-sm text-title-sm">Battalion 9 - Quick Reaction Team</span>
+<span class="font-label-sm text-label-sm text-outline">Central Standby Base</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-medium">120 Personnel</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 65%;"></div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">82%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="material-symbols-outlined text-body-md">add_circle</span>
+                  +18 Capacity Surplus
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/30 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Optimal Readiness
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs text-primary font-medium">
+<span class="material-symbols-outlined text-body-sm">check</span>
+                  Available for temporary load absorption
+                </span>
+</td>
+</tr>
+<!-- Row 5: Training Wing 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-space-md px-space-md font-semibold">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<div>
+<span class="block text-on-surface font-title-sm text-title-sm">Training Wing 3 - Central Depot</span>
+<span class="font-label-sm text-label-sm text-outline">Cadre Headquarters</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-medium">210 Personnel</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 58%;"></div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">74%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary">
+<span class="material-symbols-outlined text-body-md">swap_horiz</span>
+                  Rotational Hub
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/30 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Balanced
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-xs text-primary font-medium">
+<span class="material-symbols-outlined text-body-sm">volunteer_activism</span>
+                  Ready to supply 2x 18-member relief details
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Simulate Rebalancing Interactive Comparison Workspace -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-xl" id="simulation-workspace">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-lg">model_training</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Simulated Rebalancing Model</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Algorithmic equity projection balancing operational readiness with biological circadian rest requirements.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto bg-surface-container-low p-1.5 rounded-full">
+<button class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs" id="view-comparative">
+            Dual Comparison
+          </button>
+<button class="px-space-md py-1 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface" id="view-projection">
+            Graph Stream
+          </button>
+</div>
+</div>
+<!-- Two-panel Before & After comparative model -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Left Panel: Current Distribution -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between border-b-0 pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Current Distribution</span>
+</div>
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-space-sm py-0.5 rounded-full font-semibold">
+                Strained Baseline
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Disproportionate load carried by front-line tactical units over 60+ consecutive duty days.
+            </p>
+<!-- Metrics inside Panel -->
+<div class="mt-space-lg space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Duty Inequality Index</span>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">Gini 0.44</p>
+</div>
+<span class="font-label-md text-label-md text-error font-semibold">High Disparity</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Elevated Fatigue Zone</span>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">3 Units</p>
+</div>
+<span class="font-body-sm text-body-sm text-error font-medium">295 personnel affected</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Average Rest Deficit</span>
+<p class="font-headline-md text-headline-md text-error font-bold">-14.0 hrs</p>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Per member / weekly</span>
+</div>
+</div>
+</div>
+<!-- Minimal Chart Representation -->
+<div class="pt-space-md">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-space-xs">Duty Hours Density by Battalion</span>
+<div class="h-16 flex items-end gap-2 bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex-1 bg-error/70 rounded-t h-[94%]" title="Bn 4: 68h"></div>
+<div class="flex-1 bg-error/60 rounded-t h-[86%]" title="Dist 12: 62h"></div>
+<div class="flex-1 bg-tertiary-fixed-dim rounded-t h-[75%]" title="BOP Charlie: 54h"></div>
+<div class="flex-1 bg-primary/40 rounded-t h-[42%]" title="Bn 9: 38h"></div>
+<div class="flex-1 bg-primary/40 rounded-t h-[36%]" title="Trg 3: 32h"></div>
+</div>
+<div class="flex justify-between text-outline font-label-sm text-label-sm mt-1 px-1">
+<span>Bn 4</span>
+<span>Dist 12</span>
+<span>Charlie</span>
+<span>Bn 9</span>
+<span>Trg 3</span>
+</div>
+</div>
+</div>
+<!-- Right Panel: Simulated Optimal Distribution -->
+<div class="bg-surface-container-high/60 p-space-lg rounded-xl flex flex-col justify-between space-y-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-40 h-40 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between border-b-0 pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Simulated Optimal Distribution</span>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-sm py-0.5 rounded-full font-semibold">
+                AI Assisted Model
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Rotates 35 personnel from Training Wing 3 &amp; Battalion 9 into Battalion 4 &amp; District Unit 12.
+            </p>
+<!-- Metrics inside Panel -->
+<div class="mt-space-lg space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between shadow-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Projected Inequality Index</span>
+<p class="font-headline-md text-headline-md text-primary font-bold">Gini 0.18</p>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">Balanced Equity</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between shadow-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Projected Fatigue Reduction</span>
+<p class="font-headline-md text-headline-md text-primary font-bold">-34%</p>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Across high-strain units</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center justify-between shadow-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Rest Gap Recovery</span>
+<p class="font-headline-md text-headline-md text-primary font-bold">11.5 hrs</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Guaranteed interval</span>
+</div>
+</div>
+</div>
+<!-- Minimal Chart Representation -->
+<div class="pt-space-md">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-space-xs">Simulated Hours Normalization</span>
+<div class="h-16 flex items-end gap-2 bg-surface-container-lowest p-space-sm rounded-lg shadow-xs">
+<div class="flex-1 bg-primary rounded-t h-[52%]" title="Bn 4 Projected: 46h"></div>
+<div class="flex-1 bg-primary rounded-t h-[54%]" title="Dist 12 Projected: 48h"></div>
+<div class="flex-1 bg-primary rounded-t h-[50%]" title="BOP Charlie Projected: 44h"></div>
+<div class="flex-1 bg-primary/80 rounded-t h-[50%]" title="Bn 9 Projected: 45h"></div>
+<div class="flex-1 bg-primary/80 rounded-t h-[48%]" title="Trg 3 Projected: 43h"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 px-1">
+<span>Bn 4</span>
+<span>Dist 12</span>
+<span>Charlie</span>
+<span>Bn 9</span>
+<span>Trg 3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Simulation Parameter Controls -->
+<div class="bg-surface-container-low p-space-lg rounded-xl space-y-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Dynamic Optimization Parameters</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center">
+<!-- Slider: Shift Cap -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="shiftCap">Duty Shift Cap</label>
+<span class="font-label-md text-label-md text-primary font-bold" id="shiftCapVal">52 hrs / week</span>
+</div>
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="shiftCap" max="64" min="40" oninput="updateShiftCap(this.value)" type="range" value="52"/>
+<p class="font-label-sm text-label-sm text-outline">Upper bound threshold for active force rotations.</p>
+</div>
+<!-- Checkbox 1 -->
+<label class="flex items-start gap-space-sm cursor-pointer p-space-sm rounded-lg hover:bg-surface-container-lowest transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Preserve Specialized Squad Cohesion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prevents splitting established tactical pairs and canine teams during reallocation.</span>
+</div>
+</label>
+<!-- Checkbox 2 -->
+<label class="flex items-start gap-space-sm cursor-pointer p-space-sm rounded-lg hover:bg-surface-container-lowest transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Minimum 48h Home Rest Pre-Transfer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enforces mandatory family decompression interval prior to inter-district transit.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Institutional Approval Workflow -->
+<div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-title-sm">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Generated plans adhere to National Police Commission Welfare Circular 14-B.
+          </span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors" onclick="saveDraft()" type="button">
+            Save Simulation Draft
+          </button>
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-md flex items-center justify-center gap-space-xs" onclick="submitRedistributionPlan()" type="button">
+<span class="material-symbols-outlined text-title-sm">send</span>
+            Submit Plan for DIG / Commandant Approval
+          </button>
+</div>
+</div>
+</div>
+<!-- Welfare & Operational Accompanying Context -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined">psychology</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Psychological Safety Buffer</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Rotating personnel at 70% fatigue saturation lowers PTSD risk markers by 41% compared to waiting for critical exhaustion breakdowns.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined">nightlife</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Night Shift Circadian Limits</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Strict policy restricts consecutive night patrols to 3 continuous days, followed by a mandatory 36-hour sunlight restoration phase.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined">shield_person</span>
+<h3 class="font-title-sm text-title-sm text-on-surface">Command Ethics Verification</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          All roster balancing computations are cryptographically sealed. Rebalancing requests cannot be utilized for punitive troop reassignment.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function scrollToSimulation() {
+    const el = document.getElementById('simulation-workspace');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function updateShiftCap(val) {
+    const target = document.getElementById('shiftCapVal');
+    if (target) {
+      target.textContent = val + ' hrs / week';
+    }
+  }
+
+  function submitRedistributionPlan() {
+    const toast = document.getElementById('rebalance-toast');
+    if (toast) {
+      toast.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+      }, 4000);
+    }
+  }
+
+  function saveDraft() {
+    alert('Simulation parameters and current delta draft saved to local session.');
+  }
+
+  function applySingleRotation(unitName) {
+    alert('Staging 14-day rotational relief package for ' + unitName + '. Reviewing reserve availability...');
+  }
+</script></main></div></body></html>
