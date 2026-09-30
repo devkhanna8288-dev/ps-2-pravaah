@@ -1,0 +1,33 @@
+.blur-highlight-container {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.blur-word {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(8px);
+  will-change: filter, opacity, color;
+}
+
+.blur-highlight-container.visible .blur-word {
+  animation: blur-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.blur-word.highlighted {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@keyframes blur-in {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
